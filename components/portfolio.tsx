@@ -195,7 +195,9 @@ export function PortfolioComponent() {
       >
         {/* <div className="absolute inset-0 bg-gradient-to-r from-[#6600ff] to-[#ff00ff] opacity-20"></div> */}
         <div className="relative z-10 space-y-4">
-          <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Mr. Shaikh</h1>
+          <h1 className="text-5xl font-bold mb-4">
+            Hello, I&apos;m Mr. Shaikh
+          </h1>
           <p className="text-5xl font-semibold h-16">
             I&apos;m a{" "}
             <span>
@@ -251,18 +253,18 @@ export function PortfolioComponent() {
                 programming languages and frameworks.
                 <br />
                 <br />
-                Beyond the screens you&apos;ll find me lost in virtual worlds, gaming
-                away or diving into the depths of a good book. I&apos;ve got a knack
-                of spinning tales too - Whether it&apos;s through, shayaris, ghazals,
-                poems, stories, or writing a book. Oh, and anime? Count me in!
-                I&apos;m all about those captivating narratives and mind-blowing
-                visuals.
+                Beyond the screens you&apos;ll find me lost in virtual worlds,
+                gaming away or diving into the depths of a good book. I&apos;ve
+                got a knack of spinning tales too - Whether it&apos;s through,
+                shayaris, ghazals, poems, stories, or writing a book. Oh, and
+                anime? Count me in! I&apos;m all about those captivating
+                narratives and mind-blowing visuals.
                 <br />
                 <br />
-                I&apos;m a firm believer in the power of collaboration and creativity
-                to bring ideas to life. Whether you&apos;re working on a team
-                project, mentoring a student, or creating something completely
-                unique, I&apos;m here to help.
+                I&apos;m a firm believer in the power of collaboration and
+                creativity to bring ideas to life. Whether you&apos;re working
+                on a team project, mentoring a student, or creating something
+                completely unique, I&apos;m here to help.
               </p>
             </div>
           </div>
@@ -345,9 +347,11 @@ export function PortfolioComponent() {
                         </CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <img
+                        <Image
                           src={project.image}
                           alt={project.title}
+                          width={300}
+                          height={300}
                           className="w-full h-48 object-cover rounded-md"
                         />
                       </CardContent>
@@ -388,7 +392,9 @@ export function PortfolioComponent() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-[#e0e0e0]">&quot;{testimonial.quote}&quot;</p>
+                      <p className="text-[#e0e0e0]">
+                        &quot;{testimonial.quote}&quot;
+                      </p>
                     </CardContent>
                     <CardFooter className="flex justify-center">
                       {[...Array(5)].map((_, i) => (
