@@ -35,9 +35,6 @@ import { Link } from "react-scroll";
 import Image from "next/image";
 
 export function PortfolioComponent() {
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [activeTab, setActiveTab] = useState("web");
 
   // Explicitly typing useRef to reference HTML elements
   const heroRef = useRef<HTMLElement | null>(null);
