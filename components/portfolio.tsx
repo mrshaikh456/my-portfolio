@@ -32,6 +32,7 @@ import {
 } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-scroll";
+import Image from "next/image";
 
 export function PortfolioComponent() {
   const [textIndex, setTextIndex] = useState(0);
@@ -194,9 +195,9 @@ export function PortfolioComponent() {
       >
         {/* <div className="absolute inset-0 bg-gradient-to-r from-[#6600ff] to-[#ff00ff] opacity-20"></div> */}
         <div className="relative z-10 space-y-4">
-          <h1 className="text-5xl font-bold mb-4">Hello, I'm Mr. Shaikh</h1>
+          <h1 className="text-5xl font-bold mb-4">Hello, I&apos;m Mr. Shaikh</h1>
           <p className="text-5xl font-semibold h-16">
-            I'm a{" "}
+            I&apos;m a{" "}
             <span>
               <Typewriter
                 words={["Web Developer", "Designer", "Video Editor", "Author"]}
@@ -231,11 +232,12 @@ export function PortfolioComponent() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-8 md:mb-0">
-              <img
+              <Image
                 src="/images/profile-pic.jpg"
-                // src="../?height=300&width=300"
                 alt="Mr. Shaikh"
-                className="rounded-full w-64 h-64 object-cover mx-auto border-4 border-[#ff00ff]"
+                width={300}
+                height={300}
+                className="rounded-full object-cover mx-auto border-4 border-[#ff00ff]"
               />
             </div>
             <div className="md:w-2/3 md:pl-12">
@@ -243,24 +245,24 @@ export function PortfolioComponent() {
                 About Me
               </h2>
               <p className="mb-6 text-[#e0e0e0]">
-                I'm a web developer and UI/UX Designer with a passion for
+                I&apos;m a web developer and UI/UX Designer with a passion for
                 creating immersive digital experiences. I specialize in
                 front-end and back-end development, with expertise in various
                 programming languages and frameworks.
                 <br />
                 <br />
-                Beyond the screens you'll find me lost in virtual worlds, gaming
-                away or diving into the depths of a good book. I've got a knack
-                of spinning tales too - Whether it's through, shayaris, ghazals,
+                Beyond the screens you&apos;ll find me lost in virtual worlds, gaming
+                away or diving into the depths of a good book. I&apos;ve got a knack
+                of spinning tales too - Whether it&apos;s through, shayaris, ghazals,
                 poems, stories, or writing a book. Oh, and anime? Count me in!
-                I'm all about those captivating narratives and mind-blowing
+                I&apos;m all about those captivating narratives and mind-blowing
                 visuals.
                 <br />
                 <br />
-                I'm a firm believer in the power of collaboration and creativity
-                to bring ideas to life. Whether you're working on a team
+                I&apos;m a firm believer in the power of collaboration and creativity
+                to bring ideas to life. Whether you&apos;re working on a team
                 project, mentoring a student, or creating something completely
-                unique, I'm here to help.
+                unique, I&apos;m here to help.
               </p>
             </div>
           </div>
@@ -386,7 +388,7 @@ export function PortfolioComponent() {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-[#e0e0e0]">"{testimonial.quote}"</p>
+                      <p className="text-[#e0e0e0]">&quot;{testimonial.quote}&quot;</p>
                     </CardContent>
                     <CardFooter className="flex justify-center">
                       {[...Array(5)].map((_, i) => (
