@@ -193,7 +193,7 @@ export function PortfolioComponent() {
         {/* <div className="absolute inset-0 bg-gradient-to-r from-[#6600ff] to-[#ff00ff] opacity-20"></div> */}
         <div className="relative z-10 space-y-4">
           <h1 className="text-5xl font-bold mb-4">
-            Hello, I&apos;m Mr. Shaik
+            Hello, I&apos;m Mr. Shaikh
           </h1>
           <p className="text-5xl font-semibold h-16">
             I&apos;m a{" "}
